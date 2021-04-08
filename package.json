@@ -1,0 +1,37 @@
+{
+  "name": "cce-cluster-credentials",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build src/index.js -o dist --source-map --license licenses.txt",
+    "all": "npm run lint && npm run prepare"
+  },
+  "keywords": [
+    "actions",
+    "HuaweiCloud",
+    "container",
+    "github",
+    "CCE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huaweicloud/cce-cluster-credentials.git"
+  },
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/huaweicloud/cce-cluster-credentials/issues"
+  },
+  "homepage": "https://github.com/huaweicloud/cce-cluster-credentials#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/io": "^1.0.2",
+    "axios": "^0.21.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.24.0",
+    "eslint": "^7.4.0"
+  }
+}
